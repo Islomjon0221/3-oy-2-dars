@@ -11,10 +11,12 @@ body {
 }
 
 .container {
-    max-width: 1575px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
+    width:100%;
+    max-width:1510px;
+    margin-right:auto;
+    margin-right:auto;
+    padding-left:50px;
+    padding-right:50px
 }
 
 .header {
@@ -197,7 +199,7 @@ body {
     line-height: 49.573px; /* 138.889% */
 }
 
-.card {
+.card__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -242,12 +244,34 @@ body {
 
 .card__button a:hover {
     text-decoration: none;
+    transition: all 0.5s;
     color: #0051ff;
 }
 
 .person {
     background-color: #E4F5EB;
     height: 1687px;
+}
+
+.person .error {
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.person .error img {
+    margin-left: 20px;
+}
+
+.error h3 {
+    margin-left: 20px;
+}
+
+.error p {
+    margin-left: 20px;
+}
+
+.error a {
+    margin-left: 20px;
 }
 
 .person-container {
@@ -271,7 +295,7 @@ body {
     font-weight: 700;
     line-height: 74px; /* 127.586% */
     padding-top: 78px;
-    margin-left: 37%;
+    margin-left: 30%;
 }
 
 .person1{
@@ -303,12 +327,14 @@ body {
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     padding: 30px 30px 22px 31px;
-    padding-top: 30px;
-    padding-bottom: 22px;
-    padding-left: 31px;
+
 }
 
-
+.person .person-img {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
 .subscribers__container {
     width: 1407.33px;
@@ -464,14 +490,11 @@ body {
 }
 
 .footer {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 50px;
     width: 1425px;
     height: 452px;
     flex-shrink: 0;
     text-align: center;
-    justify-content: center;
-    align-items: center;
     background-image: url('../img/footer__png.png');
     padding: 106px 357px;
 }
